@@ -1,5 +1,5 @@
 # bbrplus-4.19
-Linux bbrplus kernel 4.19 simply ported from bbrplus 4.14  
+Linux BBRplus Kernel 4.19 simply ported from BBRplus 4.14  
 (note that it does NOT based on 4.19 version of BBR, instead just simple ported the 4.14 version of BBRplus)
 
 <br/>
