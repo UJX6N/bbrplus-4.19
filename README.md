@@ -30,7 +30,7 @@ https://github.com/cx9208/bbrplus
 <br/>
 <br/>
 
-### 3) extract the tarball
+### 3) extract the tarball & cd extracted directory
         tar zxvf linux-4.19.148.tar.gz && cd linux-4.19.148
 
 <br/>
