@@ -5,7 +5,7 @@ Linux bbrplus kernel 4.19 simply ported from bbrplus 4.14
 <br/>
 <br/>
 
-***original 4.14 version***  
+***based on original 4.14 version***  
 https://github.com/cx9208/bbrplus
 
 <br/>
