@@ -1,17 +1,28 @@
 # bbrplus-4.19
-Linux BBRplus Kernel 4.19 simply ported from BBRplus 4.14  
+Linux BBRplus Kernel 4.19 ported from BBRplus 4.14  
 (note that it does NOT based on 4.19 version of BBR, instead just simple ported the 4.14 version of BBRplus)
 
 <br/>
 <br/>
 <br/>
 
-***based on original 4.14 version***  
-https://github.com/cx9208/bbrplus
+***based on original version***  
+https://github.com/cx9208/bbrplus 
+  
+<br/>
+<br/> 
 
+## some improvements as oct-2020
+
+###  i)   merged official v4.14 tcp_bbr patches between 2018-20 into bbrplus  
+###  ii)  keep official v4.19 tcp_bbr module in the kernel, now can do either  
+<br/>
+net.ipv4.tcp_congestion_control = bbrplus    or    net.ipv4.tcp_congestion_control = bbr   
 <br/>
 <br/>
 <br/>
+<br/>
+
 
 ## patch & build bbrplus kernel youself
 (or you can use releases compiled by me in "Releases" section)      
@@ -19,33 +30,33 @@ https://github.com/cx9208/bbrplus
 <br/>
 
 ### 1) get convert patch on this repository, use git or direct download
-        (e.g., convert_official_linux-4.19.148+_src_to_bbrplus.patch)
+        (e.g., convert_official_linux-4.19.x_src_to_bbrplus.patch)
 
 <br/>
 <br/>
 
 ### 2) download officaial linux kernel
-        say 4.19.148        
-            wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.148.tar.gz
+        say 4.19.149        
+            wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.149.tar.gz
 
 <br/>
 <br/>
 
 ### 3) extract the tarball & cd extracted directory
-        tar zxvf linux-4.19.148.tar.gz && cd linux-4.19.148
+        tar zxvf linux-4.19.149.tar.gz && cd linux-4.19.149
 
 <br/>
 <br/>
 
 ### 4) copy convert patch to extracted kernel directory
         something like
-            cp ../convert_official_linux-4.19.148+_src_to_bbrplus.patch .
+            cp ../convert_official_linux-4.19.x_src_to_bbrplus.patch .
 
 <br/>
 <br/>
 
 ### 5) do the patch job
-        patch -p1 < convert_official_linux-4.19.148+_src_to_bbrplus.patch
+        patch -p1 < convert_official_linux-4.19.x_src_to_bbrplus.patch
 
 <br/>
 <br/>
