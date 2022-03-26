@@ -1290,7 +1290,7 @@ diff -ruaN a/net/ipv4/tcp_bbrplus.c b/net/ipv4/tcp_bbrplus.c
 diff -ruaN a/net/ipv4/tcp_output.c b/net/ipv4/tcp_output.c
 --- a/net/ipv4/tcp_output.c	2021-11-03 01:26:46.000000000 +0800
 +++ b/net/ipv4/tcp_output.c	2021-11-05 06:36:36.411517457 +0800
-@@ -1698,7 +1698,7 @@
+@@ -1716,7 +1716,7 @@
  /* Return how many segs we'd like on a TSO packet,
   * to send one TSO packet per ms
   */
@@ -1299,7 +1299,7 @@ diff -ruaN a/net/ipv4/tcp_output.c b/net/ipv4/tcp_output.c
  			    int min_tso_segs)
  {
  	u32 bytes, segs;
-@@ -1715,6 +1715,7 @@
+@@ -1733,6 +1733,7 @@
  
  	return segs;
  }
