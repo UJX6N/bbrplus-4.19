@@ -43,14 +43,14 @@ in the `/etc/sysctl.conf` file. &nbsp;&nbsp; ( `fq` is the only recommended pack
 <br/>
 
 ### 2) download officaial linux kernel
-        say 4.19.149        
-            wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.149.tar.gz
+        say 4.19.260        
+            wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.260.tar.gz
 
 <br/>
 <br/>
 
 ### 3) extract the tarball & cd extracted directory
-        tar zxvf linux-4.19.149.tar.gz && cd linux-4.19.149
+        tar zxvf linux-4.19.260.tar.gz && cd linux-4.19.260
 
 <br/>
 <br/>
